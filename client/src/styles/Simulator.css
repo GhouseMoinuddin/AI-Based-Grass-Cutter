@@ -1,0 +1,88 @@
+.simulator-container {
+    @apply flex flex-col lg:flex-row gap-6 h-full pb-20;
+}
+
+.sim-visualizer-box {
+    @apply flex-1 bg-skin-card rounded-2xl border border-skin-border p-4 lg:p-6 overflow-hidden relative;
+    min-height: 400px;
+}
+
+.save-btn-container {
+    @apply absolute top-4 right-4 z-10 flex gap-2;
+}
+
+.btn-save {
+    @apply bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold px-4 py-2 rounded-lg shadow-lg active:scale-95 transition-all;
+}
+
+.sim-title {
+    @apply text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-skin-base to-skin-muted mb-4;
+}
+
+.sim-map-wrapper {
+    @apply absolute inset-0 flex items-center justify-center p-4;
+}
+
+.controls-sidebar {
+    @apply w-full lg:w-96 bg-skin-card p-6 rounded-2xl border border-skin-border space-y-6;
+}
+
+.config-label-small {
+    @apply text-skin-muted text-sm font-bold uppercase tracking-wider mb-4;
+}
+
+.mode-toggle-box {
+    @apply flex bg-skin-main p-1 rounded-lg mb-6;
+}
+
+.mode-btn {
+    @apply flex-1 py-2 text-sm font-bold rounded-md transition-all;
+}
+
+.mode-btn-active {
+    @apply bg-skin-accent text-white shadow;
+}
+
+.mode-btn-inactive {
+    @apply text-skin-muted hover:text-skin-base;
+}
+
+.shapes-grid {
+    @apply grid grid-cols-2 gap-3;
+}
+
+.shape-btn {
+    @apply p-3 rounded-xl border text-sm font-medium transition-all;
+}
+
+.shape-btn-active {
+    @apply border-skin-accent bg-skin-accent/10 text-skin-accent;
+}
+
+.shape-btn-inactive {
+    @apply border-skin-border bg-skin-main text-skin-muted hover:border-skin-accent/50;
+}
+
+.text-input-label {
+    @apply text-sm text-skin-muted mb-2 block;
+}
+
+.text-input-field {
+    @apply w-full text-center text-4xl font-bold bg-skin-main border border-skin-border rounded-xl py-4 focus:ring-2 focus:ring-skin-accent outline-none text-skin-base font-mono tracking-widest;
+}
+
+.input-helper-text {
+    @apply text-xs text-skin-muted text-center mt-2;
+}
+
+.speed-control-label {
+    @apply flex justify-between text-sm text-skin-muted mb-2;
+}
+
+.speed-slider {
+    @apply w-full h-2 bg-skin-card-hover rounded-lg appearance-none cursor-pointer accent-skin-accent;
+}
+
+.btn-generate {
+    @apply w-full py-4 bg-skin-base text-skin-main font-bold rounded-xl shadow-lg hover:bg-skin-muted/20 transition-colors active:scale-95;
+}

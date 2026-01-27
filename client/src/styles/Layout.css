@@ -1,0 +1,80 @@
+.layout-container {
+    @apply min-h-screen bg-skin-main text-skin-base flex flex-col pb-20 md:pb-0;
+}
+
+.navbar {
+    @apply border-b border-skin-border bg-skin-card/80 backdrop-blur-md sticky top-0 z-50;
+}
+
+.navbar-content {
+    @apply max-w-7xl mx-auto px-4 h-16 flex items-center justify-between;
+}
+
+.logo-box {
+    @apply w-8 h-8 rounded-lg bg-gradient-to-tr from-skin-accent to-emerald-600 flex items-center justify-center;
+}
+
+.logo-text {
+    @apply font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-skin-base to-skin-muted;
+}
+
+.nav-link-desktop {
+    @apply text-sm font-medium transition-colors;
+}
+
+.nav-link-active {
+    @apply text-skin-accent;
+}
+
+.nav-link-inactive {
+    @apply text-skin-muted hover:text-skin-base;
+}
+
+.admin-btn {
+    @apply px-4 py-2 text-sm font-bold bg-skin-card hover:bg-skin-card-hover rounded-lg border border-skin-border transition-all;
+}
+
+.layout-main {
+    @apply flex-1 max-w-7xl mx-auto w-full p-4 relative;
+}
+
+.mobile-nav {
+    @apply md:hidden fixed bottom-0 left-0 right-0 bg-skin-card border-t border-skin-border z-50;
+}
+
+.mobile-nav-container {
+    @apply flex justify-around items-center h-16;
+}
+
+.mobile-link {
+    @apply flex flex-col items-center justify-center w-16 h-full relative;
+}
+
+/* Sidebar Styles */
+.sidebar-overlay {
+    @apply fixed inset-0 bg-black/60 backdrop-blur-sm z-[60];
+}
+
+.sidebar-panel {
+    @apply fixed top-0 left-0 h-full w-64 bg-skin-card border-r border-skin-border p-6 z-[70] shadow-2xl;
+}
+
+.sidebar-header {
+    @apply flex items-center justify-between mb-8;
+}
+
+.sidebar-close-btn {
+    @apply p-2 text-skin-muted hover:text-skin-base bg-skin-card-hover rounded-lg transition-colors;
+}
+
+.sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 text-skin-muted hover:text-skin-base hover:bg-skin-card-hover rounded-xl transition-all mb-2;
+}
+
+.sidebar-link-active {
+    @apply bg-skin-accent/10 text-skin-accent font-medium;
+}
+
+.sidebar-footer {
+    @apply absolute bottom-6 left-6 right-6;
+}

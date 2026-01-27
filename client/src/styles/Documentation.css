@@ -1,0 +1,15 @@
+.docs-header {
+    @apply bg-skin-card border-b border-skin-border py-16;
+}
+
+.docs-content {
+    @apply text-skin-muted leading-relaxed;
+}
+
+.docs-content p {
+    @apply mb-4;
+}
+
+.docs-content code {
+    @apply font-mono bg-skin-main px-1.5 py-0.5 rounded text-sm text-skin-accent;
+}

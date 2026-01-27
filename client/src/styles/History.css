@@ -1,0 +1,103 @@
+.history-container {
+    @apply space-y-6 pb-20;
+}
+
+.page-title {
+    @apply text-2xl font-bold text-skin-base mb-6;
+}
+
+.analytics-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-4 mb-8;
+}
+
+.analytics-card {
+    @apply bg-skin-card border border-skin-border p-6 rounded-2xl;
+}
+
+.analytics-header {
+    @apply flex items-center gap-3 mb-2;
+}
+
+.icon-box-blue {
+    @apply p-2 bg-blue-500/10 rounded-lg text-blue-400;
+}
+
+.icon-box-grass {
+    @apply p-2 bg-skin-accent/10 rounded-lg text-skin-accent;
+}
+
+.icon-box-purple {
+    @apply p-2 bg-purple-500/10 rounded-lg text-purple-400;
+}
+
+.analytics-label {
+    @apply text-skin-muted text-sm font-bold;
+}
+
+.analytics-value {
+    @apply text-3xl font-mono font-bold text-skin-base;
+}
+
+.analytics-value-small {
+    @apply text-2xl font-bold text-skin-base truncate;
+}
+
+.analytics-unit {
+    @apply text-sm text-skin-muted font-sans;
+}
+
+.section-subtitle {
+    @apply text-xl font-bold text-skin-base mb-4;
+}
+
+.table-container {
+    @apply bg-skin-card rounded-2xl border border-skin-border overflow-hidden;
+}
+
+.history-table {
+    @apply w-full text-left;
+}
+
+.table-head {
+    @apply bg-skin-main text-skin-muted text-sm uppercase tracking-wider;
+}
+
+.th-cell {
+    @apply p-4 font-medium;
+}
+
+.table-body {
+    @apply divide-y divide-skin-border;
+}
+
+.table-row {
+    @apply text-skin-muted hover:bg-skin-card-hover transition-colors;
+}
+
+.td-date {
+    @apply p-4 text-sm font-mono text-skin-muted;
+}
+
+.td-type-badge {
+    @apply px-2 py-1 rounded border border-skin-border text-xs text-skin-muted bg-skin-card-hover;
+}
+
+.td-value {
+    @apply p-4 font-bold text-skin-base;
+}
+
+.td-duration {
+    @apply p-4 text-sm font-mono text-skin-accent;
+}
+
+.status-badge {
+    @apply inline-flex items-center gap-1.5 px-2 py-1 rounded-full text-xs font-bold;
+}
+
+.status-completed {
+    @apply bg-green-500/10 text-green-400;
+}
+
+.status-failed {
+    @apply bg-red-500/10 text-red-400;
+}

@@ -1,0 +1,90 @@
+.monitor-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 h-full;
+}
+
+.monitor-card {
+    @apply bg-skin-card rounded-2xl border border-skin-border overflow-hidden relative;
+}
+
+.live-badge {
+    @apply absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded flex items-center gap-1 animate-pulse z-10;
+}
+
+.live-badge-dot {
+    @apply w-2 h-2 bg-white rounded-full;
+}
+
+.camera-feed-placeholder {
+    @apply w-full h-full flex items-center justify-center bg-black/40;
+    min-height: 300px;
+}
+
+.camera-overlay {
+    @apply absolute bottom-4 left-4 right-4 flex justify-between text-xs text-white/70;
+}
+
+.gps-badge {
+    @apply absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded flex items-center gap-1 z-10;
+}
+
+.gps-map-container {
+    @apply w-full h-full bg-skin-card-hover p-4 relative;
+    min-height: 300px;
+}
+
+.gps-map-grid {
+    @apply absolute inset-0 opacity-10;
+}
+
+.gps-dot {
+    @apply absolute top-1/2 left-1/2 w-4 h-4 bg-blue-500 rounded-full animate-pulse;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+}
+
+.gps-ping {
+    @apply absolute -inset-2 rounded-full border border-blue-500/50 animate-ping;
+}
+
+.telemetry-card {
+    @apply md:col-span-2 bg-skin-card rounded-2xl border border-skin-border p-6 flex items-center justify-between;
+}
+
+.telemetry-item {
+    @apply flex items-center gap-4;
+}
+
+.telemetry-icon-box {
+    @apply p-3 bg-yellow-500/10 rounded-lg text-yellow-500;
+}
+
+.telemetry-label {
+    @apply text-sm text-skin-muted;
+}
+
+.telemetry-value {
+    @apply text-xl font-mono font-bold text-skin-base;
+}
+
+.telemetry-right {
+    @apply text-right;
+}
+
+.telemetry-value-large {
+    @apply text-2xl font-mono font-bold text-skin-accent;
+}
+
+.gps-heading-arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #22c55e;
+    position: absolute;
+    top: -5px;
+    left: -6px;
+    transform: translate(50%, -50%);
+}
+
+.gps-dot {
+    transform-origin: center center;
+}

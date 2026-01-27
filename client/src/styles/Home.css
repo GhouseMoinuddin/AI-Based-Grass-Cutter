@@ -1,0 +1,122 @@
+.home-container {
+    @apply space-y-12 pb-12;
+}
+
+.hero-section {
+    @apply relative py-12 md:py-20 text-center space-y-6 overflow-hidden;
+}
+
+.hero-bg-glow {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-skin-accent/20 rounded-full -z-10;
+    width: 500px;
+    height: 500px;
+    filter: blur(120px);
+}
+
+.badge {
+    @apply inline-block px-4 py-1.5 rounded-full border border-skin-accent/30 bg-skin-accent/10 text-skin-accent text-sm font-medium mb-4;
+}
+
+.hero-title {
+    @apply text-4xl md:text-6xl font-bold tracking-tight text-skin-base;
+}
+
+.hero-title-highlight {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-skin-accent to-teal-400;
+}
+
+.hero-desc {
+    @apply max-w-2xl mx-auto text-lg text-skin-muted leading-relaxed;
+}
+
+.hero-actions {
+    @apply flex flex-col sm:flex-row gap-4 justify-center pt-4;
+}
+
+.btn-primary-large {
+    @apply px-8 py-4 bg-skin-accent hover:bg-skin-accent-hover text-white font-bold rounded-xl shadow-lg shadow-skin-accent/20 transition-transform active:scale-95 flex items-center justify-center gap-2;
+}
+
+.btn-secondary-large {
+    @apply px-8 py-4 bg-skin-card hover:bg-skin-card-hover text-skin-base font-semibold rounded-xl border border-skin-border transition-colors active:scale-95;
+}
+
+/* Feature Cards & Other sections merged with semantic refactor */
+.features-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-6 mb-24;
+}
+
+.feature-card {
+    @apply bg-skin-card border border-skin-border p-6 rounded-2xl hover:border-skin-accent/50 transition-colors flex flex-col items-center text-center;
+}
+
+.feature-icon-box {
+    @apply w-12 h-12 bg-skin-accent/10 rounded-xl flex items-center justify-center text-skin-accent mb-4;
+}
+
+.feature-title {
+    @apply text-lg font-bold text-skin-base mb-2;
+}
+
+.feature-desc {
+    @apply text-skin-muted text-sm;
+}
+
+/* How It Works Section */
+.section-title {
+    @apply text-3xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-skin-base to-skin-muted;
+}
+
+.steps-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 mb-24;
+}
+
+.step-card {
+    @apply relative p-6 bg-skin-card rounded-2xl border border-skin-border text-center;
+}
+
+.step-number {
+    @apply absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-skin-accent rounded-full flex items-center justify-center text-white font-bold shadow-lg;
+}
+
+/* Tech Specs */
+.specs-container {
+    @apply max-w-4xl mx-auto px-6 mb-24 bg-skin-card rounded-2xl border border-skin-border overflow-hidden;
+}
+
+.specs-row {
+    @apply flex border-b border-skin-border last:border-0;
+}
+
+.specs-label {
+    @apply w-1/3 p-4 bg-skin-card-hover text-skin-muted font-medium;
+}
+
+.specs-value {
+    @apply w-2/3 p-4 text-skin-base font-mono;
+}
+
+/* Footer */
+.home-footer {
+    @apply border-t border-skin-border bg-skin-main py-12 px-6;
+}
+
+.footer-content {
+    @apply max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6;
+}
+
+.footer-logo {
+    @apply font-bold text-xl text-skin-base;
+}
+
+.footer-links {
+    @apply flex gap-6 text-skin-muted text-sm;
+}
+
+.footer-link {
+    @apply hover:text-skin-base transition-colors cursor-pointer;
+}
+
+.footer-copyright {
+    @apply text-skin-muted text-sm;
+}

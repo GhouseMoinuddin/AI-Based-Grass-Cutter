@@ -1,0 +1,77 @@
+.controls-container {
+    @apply min-h-[calc(100vh-64px)] p-6 md:p-12 max-w-7xl mx-auto;
+}
+
+.controls-header {
+    @apply flex justify-between items-center mb-12 border-b border-skin-border pb-6;
+}
+
+.controls-main {
+    @apply grid md:grid-cols-2 gap-12 items-start;
+}
+
+.dpad-section {
+    @apply flex flex-col items-center justify-center p-8 bg-skin-card/50 rounded-3xl border border-skin-border backdrop-blur-sm;
+}
+
+.dpad-grid {
+    @apply grid grid-cols-3 gap-2;
+}
+
+.dpad-btn {
+    @apply w-20 h-20 flex items-center justify-center rounded-2xl bg-skin-card border-b-4 border-skin-border text-skin-muted transition-all active:border-b-0 active:translate-y-1 active:bg-skin-card-hover hover:text-skin-accent hover:border-skin-accent/50;
+}
+
+.dpad-center {
+    @apply w-20 h-20 rounded-full bg-skin-main/50;
+}
+
+.action-panel {
+    @apply flex flex-col;
+}
+
+.btn-action {
+    @apply py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-transform active:scale-95;
+}
+
+.btn-start {
+    @apply bg-skin-accent text-white shadow-lg shadow-skin-accent/20 hover:bg-skin-accent-hover;
+}
+
+.btn-pause {
+    @apply bg-skin-card text-skin-base border border-skin-border hover:bg-skin-card-hover;
+}
+
+.btn-estop {
+    @apply w-full py-6 bg-red-600 text-white font-black text-xl rounded-2xl shadow-xl shadow-red-600/30 flex flex-col items-center gap-2 hover:bg-red-700 active:scale-95 transition-all mt-auto;
+}
+
+.toggle-switch {
+    @apply w-12 h-6 bg-skin-main rounded-full relative transition-colors border border-skin-border;
+}
+
+.toggle-switch.active {
+    @apply bg-skin-accent border-skin-accent;
+}
+
+.toggle-knob {
+    @apply w-4 h-4 bg-white rounded-full absolute top-0.5 left-1 transition-all;
+}
+
+.toggle-switch.active .toggle-knob {
+    @apply translate-x-6;
+}
+
+.animate-spin-slow {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
